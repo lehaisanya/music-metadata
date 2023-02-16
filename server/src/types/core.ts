@@ -1,4 +1,4 @@
-export interface TrackInfo {
+export interface TrackData {
     filename: string
     title?: string
     artist?: string
@@ -9,14 +9,8 @@ export interface TrackInfo {
     cover?: string
 }
 
-export interface TrackData {
-    info: TrackInfo
-    checked: boolean
-}
-
 export interface ImageData {
     mime: string
-    cover: string
     data: number[]
 }
 

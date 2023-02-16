@@ -1,9 +1,10 @@
 import React from 'react'
 import { ChakraProvider, theme } from '@chakra-ui/react'
-import { MainPage } from 'pages/Main'
+import { PageLoader } from 'pages/PageLoader'
+import './styles.css'
 
 export const App = () => (
     <ChakraProvider theme={theme}>
-        <MainPage />
+        <PageLoader />
     </ChakraProvider>
 )
