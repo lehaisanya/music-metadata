@@ -1,3 +1,5 @@
-import { FilesStore } from './Files'
+import { AudioStore } from './AudioStore'
+import { TracksStore } from './TracksStore'
 
-export const filesStore = new FilesStore()
+export const audioStore = new AudioStore()
+export const tracksStore = new TracksStore(audioStore)

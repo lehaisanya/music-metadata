@@ -1,6 +1,6 @@
 import * as express from 'express'
 import * as dotenv from 'dotenv'
-import { filesRoute } from './routes/files'
+import { apiRoute } from './routes/apiRoutes'
 
 dotenv.config()
 
@@ -32,6 +32,6 @@ export class App {
     }
 
     private async routes() {
-        this.app.use('/api/files/', filesRoute)
+        this.app.use('/api', apiRoute)
     }
 }
